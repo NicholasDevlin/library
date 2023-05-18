@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #c2c8c6;
+}
+
+header {
+  background-color: #eae5d9;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #76908e;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.add-book {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  padding: 7px 60px 7px 60px;
+  background-color: #c2c8c6;
+  border: solid 1px #c2c8c6;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #8f9895;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-submit:hover {
+  padding: 7px 60px 7px 60px;
+  background-color: #8f9895;
+  color: #c2c8c6;
+  border: solid 1px #8f9895;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.book-form {
+  width: fit-content;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 9px;
+  display: none;
+}
+
+form {
+  width: 230px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.book-form h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.txt-box {
+  padding: 10px 5px 10px 5px;
+  border-radius: 7px;
+  border: none;
+  font-size: 17px;
+}
+
+.txt-box:focus {
+  outline: none;
+}
+
+.checkbox {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+
+  justify-content: center;
+}
+
+table tr {
+  justify-content: center;
+}
+
+table tr th {
+  padding: 20px 0 20px;
+  border-bottom: 2px solid #000;
+  width: 33%;
+}
+
+footer {
+  text-align: center;
+}

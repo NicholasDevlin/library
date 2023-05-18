@@ -10,30 +10,47 @@
 </head>
 
 <body>
-  <header>
-    <h1>Library</h1>
-  </header>
-  <main>
+  <div class="container">
     <div>
-      <button>+ Add a book</button>
+      <header>
+        <h1>Library</h1>
+      </header>
+
+      <main>
+        <div class="add-book">
+          <button class="btn-submit">+ Book</button>
+        </div>
+
+        <div class="book-form">
+          <h3>Add new book</h3>
+          <form action="">
+            <input class="txt-box" type="text" name="title" id="title" placeholder="Atomic Habits"><br>
+            <input class="txt-box" type="text" name="author" id="author" placeholder="James Clear"><br>
+            <div class="checkbox">
+              <label for="status">Have you read it?</label>
+              <input class="status" type="checkbox" name="Read" id="status">
+            </div>
+            <input class="btn-submit" type="button" value="Submit">
+          </form>
+        </div>
+
+        <section>
+          <h2>Books</h2>
+          <table>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Status</th>
+            </tr>
+          </table>
+        </section>
+      </main>
     </div>
-    <section>
-      <h2>Books</h2>
-      <table>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
-    </section>
-  </main>
-  <footer>
-    Copyright © NicholasDevlin
-  </footer>
+
+    <footer>
+      Copyright © NicholasDevlin
+    </footer>
+  </div>
 </body>
 
 </html>
