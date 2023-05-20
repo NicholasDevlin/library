@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
   <title>Library</title>
 </head>
 
@@ -25,13 +25,13 @@
         <div id="bookForm" class="book-form">
           <h3>Add new book</h3>
           <form id="addBookForm">
-            <input class="txt-box" type="text" name="title" id="title" placeholder="Atomic Habits" required><br>
-            <input class="txt-box" type="text" name="author" id="author" placeholder="James Clear" required><br>
+            <input class="txt-box" type="text" id="title" placeholder="Atomic Habits" required><br>
+            <input class="txt-box" type="text" id="author" placeholder="James Clear" required><br>
             <div class="checkbox">
-              <label for="status">Have you read it?</label>
-              <input class="status" type="checkbox" name="read" id="status">
+              <label for="read">Have you read it?</label>
+              <input class="status" type="checkbox" id="read">
             </div>
-            <input class="btn-submit" type="button" value="Submit">
+            <input class="btn-submit" type="submit" value="Submit">
           </form>
         </div>
         <div class="overlay" id="overlay"></div>
@@ -43,7 +43,9 @@
               <th>Title</th>
               <th>Author</th>
               <th>Status</th>
+              <th></th>
             </tr>
+            <tbody id="tableContent"></tbody>
           </table>
         </section>
       </main>

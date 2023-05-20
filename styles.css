@@ -57,7 +57,6 @@ header h1 {
   position: fixed;
   width: fit-content;
   padding: 20px;
-  border: 2px solid #000;
   border-radius: 9px;
   z-index: 1;
   top: 50%;
@@ -131,8 +130,6 @@ h2 {
 
 table {
   width: 100%;
-
-  justify-content: center;
 }
 
 table tr {
@@ -140,9 +137,27 @@ table tr {
 }
 
 table tr th {
-  padding: 20px 0 20px;
+  padding: 20px 0;
   border-bottom: 2px solid #000;
-  width: 33%;
+  width: 25%;
+}
+
+tbody tr button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.btn-read {
+  background-color: rgb(187, 246, 98);
+}
+
+.btn-delete {
+  background-color: rgb(243, 88, 88);
+}
+
+tbody tr td {
+  text-align: center;
 }
 
 footer {
